@@ -1,0 +1,12 @@
+training = contiene la información tal cual del archivo  X_train.txt
+test = contiene la información tal cual del archivo X_test.txt
+features = contiene la información tal cual del archivo features.txt
+titulos = traduce el data frame "features" en un vector de texto que contiene el nombre de las columnas de las tablas trining y test
+label_training = contiene la información tal cual del archivo  y_train.txt
+label_test = contiene la información tal cual del archivo  y_test.txt
+join = contiene el conjunto de las dos bases "trining" y "test"
+columnas1 = las columnas que tienen el contenido de las palabra mean() o std()
+columnas2 = adicional a las columnas1 se agregan las columnas subject y label 
+join_medidas = recorta "join" dejando solo las columnas marcadas en "columnas2"
+labels = contiene la información tal cual del archivo activity_labels.txt
+join_medidas_activivity = contiene la misma información de "join_medidas" agregando la actividad explícita que realiza el individuo

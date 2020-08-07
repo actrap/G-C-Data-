@@ -30,7 +30,7 @@ join <- rbind(training,test)
 columnas1 <- names(join)[c(grep("mean()",titulos),grep("std()",titulos))]
 columnas2 <- c("subject","label",columnas1)
 
-join_medidas <- subset(join, select = columnas)
+join_medidas <- subset(join, select = columnas2)
 
 ### 3. Uses descriptive activity names to name the activities in the data set
 labels <- read.table('activity_labels.txt')
